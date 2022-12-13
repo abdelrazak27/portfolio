@@ -1,0 +1,231 @@
+/* FONT */
+@font-face {
+    font-family: 'FuturaLight';
+    src:  url('../fonts/Futura-Light.eot') format('embedded-opentype'), 
+            url('../fonts/Futura-Light.otf')  format('opentype'),
+            url('../fonts/Futura-Light.woff') format('woff'), 
+            url('../fonts/Futura-Light.ttf')  format('truetype'), 
+            url('../fonts/Futura-Light.svg#Futura') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FuturaBold';
+    src:  url('../fonts/Futura-Bold.eot?#iefix') format('embedded-opentype'),  
+          url('../fonts/Futura-Bold.otf')  format('opentype'),
+          url('../fonts/Futura-Bold.woff') format('woff'), 
+          url('../fonts/Futura-Bold.ttf')  format('truetype'), 
+          url('../fonts/Futura-Bold.svg#Futura-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura';
+    src:  url('../fonts/Futura.eot?#iefix') format('embedded-opentype'),  
+          url('../fonts/Futura.otf')  format('opentype'),
+          url('../fonts/Futura.woff') format('woff'), 
+          url('../fonts/Futura.ttf')  format('truetype'), 
+          url('../fonts/Futura.svg#Futura') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+/* fix internet explorer pr les elements html5 */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; /* définit le type d'affichage utilisée pour le rendu d'un élément  */
+}
+
+body, p{
+    font-family: 'Futura', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'FuturaBold', sans-serif;
+}
+img, form, label, input, select, textarea{
+    width: 100%;
+}
+p{
+    font-size: 16px;
+}
+a:hover{
+    color: #e4194b;
+}
+.active{
+    background: #e4194b;
+}
+.main-nav .active a{
+    color: #fff;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+.background{
+    background: #f3f3f3;
+}
+
+
+
+/* Menu site */
+
+nav {
+    width: 100%;
+    background: #fff;
+    border-bottom: 3px solid #e4194b;
+
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.main-nav li:first-child {
+    width: 10%;
+    margin-right: auto; /* sépare le logo et renvoie tout à droite les li du menu */
+}
+
+.main-nav a {
+    margin: 10px;
+    display: block; /* block pour hauteur largeur etc */
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.main-nav li{
+    display: flex;
+    align-items: center;
+    font-family: 'FuturaBold', sans-serif;
+}
+
+.main-nav li:hover {
+    background-color: #e4194b;
+}
+
+.main-nav li:hover a{
+    color: white;
+}
+
+.main-nav li:first-child:hover {
+    background: none;
+}
+
+.cadre-img {
+    background-image: url('../img/slider.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 85vh;
+    border-bottom: 3px solid #e4194b;
+    display: flex;
+}
+
+.cadre-img div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.cadre-img h1 {
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px 0px 25px;
+}
+
+h1 span {
+    color: #e4194b;
+    font-size: 75px;
+    line-height: 1;
+}
+
+h2 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+h2 span {
+    color: #e4194b;
+}
+
+.cards-offres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.cards-offres div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    width: 330px;
+    background: #e4194b;
+    border-radius: 15px;
+}
+
+.cards-offres div:nth-child(2) {
+    background: #920a2c;
+}
+
+.cards-offres div h3 {
+    font-size: 22px;
+    padding-top: 10px;
+}
+.cards-offres div h3 span{
+    font-size: 40px;
+    line-height: 1;
+}
+
+.cards-offres div p {
+    font-family: 'FuturaLight', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.cards-offres div #periode {
+    margin: 30px 0px 45px;
+}
+
+.cards-offres div button {
+    font-family: 'FuturaBold', sans-serif;
+    margin: 20px auto 15px auto;
+    color: #e4194b;
+    background: white;
+    border-radius: 15px;
+    border: none;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+}
