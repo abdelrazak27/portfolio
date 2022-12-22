@@ -318,11 +318,11 @@ i.nav__icon {
 		}
 		&__link {
 			&--active::before {
-				bottom: -1.22rem;
+				display: none;
 			}
 			&:hover {
 				&::before {
-					bottom: -1.22rem;
+					display: none;
 				}
 			}
 		}
@@ -331,16 +331,8 @@ i.nav__icon {
 
 
 @media screen and (max-width: 520px) {
-	.nav{
-		&__list {
-			column-gap: 0rem;
-		}
-		&__link--active {
-			&::before {
-				min-width: 2rem;
-				width: 50%;
-			}
-		}
+	.nav__list {
+		column-gap: 0rem;
 	}
 }
 
