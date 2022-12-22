@@ -224,6 +224,8 @@ i.nav__icon {
 	}
 }
 
+
+
 @media screen and (max-width: 1050px) {
 	.nav__link--active::before {
 		bottom: -0.55rem;
@@ -314,14 +316,10 @@ i.nav__icon {
 		&__list {
 			justify-content: space-evenly;
 		}
-	}
-	.nav {
 		&__link {
 			&--active::before {
 				bottom: -1.22rem;
 			}
-		}
-		&__link {
 			&:hover {
 				&::before {
 					bottom: -1.22rem;
@@ -331,6 +329,20 @@ i.nav__icon {
 	}
 }
 
+
+@media screen and (max-width: 520px) {
+	.nav{
+		&__list {
+			column-gap: 0rem;
+		}
+		&__link--active {
+			&::before {
+				min-width: 2rem;
+				width: 50%;
+			}
+		}
+	}
+}
 
 
 
@@ -650,6 +662,7 @@ i.nav__icon {
 
 
 
+
 @media screen and (max-width:650px) {
 	.section {
 		&__title {
@@ -679,6 +692,9 @@ i.nav__icon {
 }
 
 
+
+
+
 @media screen and (max-width:700px) {
 	.section {
 		&__illustration {
@@ -694,11 +710,13 @@ i.nav__icon {
 		&__illustration--joined {
 			flex-direction: column-reverse;
 			.section__illustration-image {
-				margin-right: 40%;
+				margin-right: 27%;
 			}
 		}
 	}
 }
+
+
 
 
 
