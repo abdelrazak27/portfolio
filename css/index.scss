@@ -619,6 +619,37 @@ i.nav__icon {
 }
 
 
+@media screen and (max-width:500px) {
+	.section__bloc-list {
+		.item {
+			padding: 8px 12px;
+			gap: 12px;
+			font-size: 13px;
+			i {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+
+
+@media screen and (max-width:425px) {
+	.section__bloc-list {
+		.item {
+			padding: 8px 10px;
+			gap: 10px;
+			font-size: 10px;
+			i {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+
+
+
 @media screen and (max-width:650px) {
 	.section {
 		&__title {
